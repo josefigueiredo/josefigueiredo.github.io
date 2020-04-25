@@ -1,0 +1,30 @@
+html{
+    background-image: linear-gradient(to left, gainsboro , DimGray);
+
+}
+
+body{
+    border: 1px solid red;
+    margin: 1em 1em 1em 1em;
+    padding: 1em 1.5em 1.5em 1.5em;
+    font-size: 1.5em;
+}
+section{
+    border: 1px solid red;
+    margin: 1em 1em 1em 1em;
+    padding: 1em 1.5em 1.5em 1.5em;
+}
+
+main{
+    font-size: large;
+}
+
+footer{
+    font-size: 0.5em;
+    text-align: right;
+}
+
+menu{
+    text-align: right;
+   
+}
