@@ -1,30 +1,67 @@
-html{
-    background-image: linear-gradient(to left, gainsboro , DimGray);
-
+* {
+    box-sizing: border-box;
 }
 
-body{
-    border: 1px solid red;
-    margin: 1em 1em 1em 1em;
-    padding: 1em 1.5em 1.5em 1.5em;
+
+/* Para telas grandes */
+
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav a {
     font-size: 1.5em;
-}
-section{
-    border: 1px solid red;
-    margin: 1em 1em 1em 1em;
-    padding: 1em 1.5em 1.5em 1.5em;
-}
-
-main{
-    font-size: large;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-footer{
-    font-size: 0.5em;
-    text-align: right;
+nav a .textoMenu {
+    padding-left: 0.5em;
 }
 
-menu{
-    text-align: right;
-   
+nav a:hover {
+    background-color: #0088cc;
+    color: black;
+}
+
+main {
+    padding: 1%;
+    margin-top: 1%;
+    height: 1500px;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+
+@media screen and (max-width: 992px) {
+    body {}
+    nav a .textoMenu {
+        display: none;
+    }
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 600px) {
+    body {}
+    header {
+        display: none;
+    }
+    nav a .textoMenu {
+        display: none;
+    }
 }

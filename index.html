@@ -1,52 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<html>
 <head>
-    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> José de Figueiredo </title>
-    <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        section {
+            margin-top: 1em;
+            padding: 1em;
+        }
+    </style>
+
 </head>
+
 <body>
-    <menu>
-        <a href="#principal" class="active">Principal</a> | 
-        <a href="#disciplinas">Disciplinas</a> | 
-        <a href="#projetos">Projetos</a> | 
-        <a href="#sobre">Sobre</a>  
-    </menu>
-<main>
-    <h1> Bem Vindo.</h1>
-    <p> Esta página foi desenvolvida com o propósito de armazenar e divulgar diversos conteúdos e assuntos que tenho algum tipo de envolvimento. </p>
-    
-    
-    <section id="disciplinas">
-        <h4>Disciplinas</h4>
-        <p>Estas disciplinas são trabalhadas no Instituto Federal Sul-rio-grandense </p>
-        <p>2020/1</p>
-        <dl>
-            <dt>Ciência da Computação</dt>
-                <dd>Circuitos Digitais - 1º Nível</dd>
-                <dd>Análise e Complexidade de Algoritmos - 6º Nível </dd>
-            <dt>EMI Técnico em Informática</dt>
-                <dd>Programação 1 - 1º ano</dd>
-            <dt>Engenharia Civil</dt>
-                <dd>Programação Aplicada a Engenharia Civil - 2º ano</dd>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+        <a class="navbar-brand" href="#">José de Figueiredo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#disciplinas">Disciplinas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
 
-        </dl>
-    </section>
-    <section id="projetos">
-        <h4>Projetos</h4>
-        <p> Em Projetos, estão alguns materiais relativos a projetos técnicos que particpei. </p>
 
-    </section>
-    <p> A página é simples pois não tenho skills de web designer.</p>
-    <p> Todo conteúdo disponiblizado é livre para uso, dentro dos termos da licença GPL 3 - leia sobre <a href="LICENSE">aqui</a>. </p>
-</main>
+    <main class="container-fluid">
+        <section class="card overflow-auto" style="height: 100vh;" id="home">
+            <h2 class="card-title">Principal</h2>
+            <p class="card-text">
+                Esta página foi (é constantemente) desenvolvida com o propósito de armazenar e divulgar diversos conteúdos e assuntos que tenho algum tipo de envolvimento. </p>
+            <p> Sinta-se a vontade para entrar em contato.</p>
+            </p>
+        </section>
 
-   <footer>
-        <span> <a href="mailto:debgnulinux@gmail.com">José de Figueiredo</a> </span> |
-        <span id="hack"> <a href="http://phrack.org/issues/7/3.html">Hack the Planet!</a> </span>
-    </footer>
+        <section class="card overflow-auto" style="height: 100vh;" id="disciplinas">
+            <h2 class="card-title">Disciplinas</h2>
+            <p class="card-text"></p>Estas disciplinas são trabalhadas no Instituto Federal Sul-rio-grandense </p>
+            <p class="card-text">2020/1</p>
+            <p class="card-text">
+                <dl>
+                    <dt>Ciência da Computação</dt>
+                    <dd>Circuitos Digitais - 1º Nível</dd>
+                    <dd>Análise e Complexidade de Algoritmos - 6º Nível </dd>
+                    <dt>EMI Técnico em Informática</dt>
+                    <dd>Programação 1 - 1º ano</dd>
+                    <dt>Engenharia Civil</dt>
+                    <dd>Programação Aplicada a Engenharia Civil - 2º ano</dd>
+
+                </dl>
+            </p>
+            <p class="card-text">
+                Esta página foi (é constantemente) desenvolvida com o propósito de armazenar e divulgar diversos conteúdos e assuntos que tenho algum tipo de envolvimento. </p>
+            <p> Sinta-se a vontade para entrar em contato.</p>
+            </p>
+
+            </p>
+        </section>
+        <section class="card overflow-auto" style="height: 100vh;" id="projetos">
+            <h2 class="card-title">Projetos</h2>
+            <p class="card-text">Em Projetos, estão alguns materiais relativos a projetos técnicos que particpei. </p>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida in fermentum et sollicitudin ac orci. Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. Tortor dignissim
+            </p>
+            <p class="card-text">Sinta-se a vontade para entrar em contato.</p>
+        </section>
+
+        <section class="card overflow-auto" style="height: 100vh;" id="sobre">
+            <h2 class="card-title">Sobre mim</h2>
+            <p class="card-text">Meu nome é José de Figueiredo e sou professor. </p>
+            <p class="card-text">
+                Minha formação técnica inicia em 1992, com o curso <a href="https://ctececy.wixsite.com/ensino">Técnico em Eletrônica</a>, na escola Cecy Leyte Costa de Passo Fundo.
+            </p>
+            <p class="card-text">
+                Bacharel em <a href="https://www.upf.br/Iceg/curso/ciencia-da-computacao">Ciência da Computação</a> pela Universidade de Passo Fundo (2004), Especialista em Educação a Distância (2010) e Mestre em Computação Aplicada (2016) pelo Programa
+                de <a href="https://www.upf.br/ppgca">Pós-Graduação em Computação Aplicada</a> na Universidade de Passo Fundo. </p>
+
+            <p class="card-text">
+                Atualmente é professor no <a href="http://www.ifsul.edu.br">Instituto Federal de Educação, Ciência e Tecnologia Sul-rio-grandense</a>. </p>
+            <p class="card-text">
+                Possui larga experiência profissional em TI com ênfase em infraestrutura, tendo atuado principalmente nos seguintes temas: softwares para engenharia clínica e médicos, imagens médicas, infraestrutura de TI e redes de computadores. Trabalhando atualmente
+                com ensino e pesquisa nas áreas da computação móvel e sistemas embarcados; redes de computadores e hardware. </p>
+            <p class="card-text"> Também sou forte entusiasta e (conforme consigo) colaborador em projetos de Softwares e Hardwares Livres.
+            </p>
+        </section>
+    </main>
+
+
 </body>
 
 </html>
