@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Scio Me Nihil Scire </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/0f5c63e59f.js" crossorigin="anonymous"></script>
+
+    <meta name="description" content="Computação, Informática, Dungeon & Dragons">
+
+</head>
+
+<body class="bg-dark text-white">
+    <!-- Nav tabs -->
+    <nav class="container-fluid p-5 m-7.5">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link active fas fa-backward" data-toggle="pill" href="index.html" onclick="goBack()"><span style="padding-top: 0.5em;" class="d-none d-lg-block">Página Anterior</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Tab panes -->
+    <main class="tab-content">
+        <section class="tab-pane container active" id="filmes">
+            <article>
+                Filmes relacionados com tecnologia, de alguma forma.<p></p>
+                <section class="card bg-secondary ">
+                    <h5 class="card-header ">Filmes relacionados (já vistos, não estão ordenados)</h5>
+                    <article class="card-body ">
+                        <h6 class="card-title ">Snowden - herói ou trador.</h6>
+                        <p class="card-text font-italic"> Tema: Apresenta uma versão da história de Edward Snowden, que tornou público diversas práticas ilegais de espionagem praticadas pelo FBI e NSA.</p>                     
+                    </article>
+                </section>
+                <section class="card bg-secondary ">
+                    <h5 class="card-header ">Matrix - triologia</h5>
+                    <article class="card-body ">
+                        <h6 class="card-title ">Fortaleza Digital, por Dan Brown</h6>
+                        <p class="card-text font-italic"> Romance ficcional; Tema: Segurança da informação.</p>                     
+                    </article>
+                </section>
+            </article>
+        </section>
+    </main>
+</body>
+<script>
+    function goBack() {
+  window.history.back();
+}
+</script>
+
+
+</html>
