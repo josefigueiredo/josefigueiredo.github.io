@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <title>Encontrar a Sina!</title>
+        <meta charset="utf-8" />
     </head>
     <body>
         <h1>Encontrando sua sina:</h1> 
@@ -9,21 +10,9 @@
             <strong>O número gerado pelo seu sobrenome determinará o exercício que irá fazer:</strong> <p></p>
             <label for="nome">Informe <strong>apenas</strong> seu último sobrenome:</label><p>
             <input type="text" id="nome"><p></p>
-            <button type="submit" onclick="suaSina()">Calcule sua sina!</button>
+            <button type="submit" onclick="suaSina()">Encontre sua sina!</button>
         </form>
         <h6> <a href="https://josefigueiredo.github.io/"> Minha página.... </h6>
     </body>
-    <script>
-        function suaSina(){
-            var nome = document.getElementById("nome").value;
-            var acc = 0;
-            let i; 
-
-            for(i=0;i<nome.length;i++){
-                acc += nome.charCodeAt(i);               
-            }
-            let choice = parseInt(parseInt(acc/100)*4/9);
-            alert(choice);
-        }
-    </script>
+    <script src="assets/src/script.js"></script>
 </html>
