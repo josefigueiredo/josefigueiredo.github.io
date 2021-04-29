@@ -26,3 +26,47 @@ function suaSina(){
             break;
     }
 }
+
+function suaSina2(){
+    var nome = document.getElementById("nome").value;
+    var contVogal = 0;
+    
+    for(let i=0;i<nome.length;i++){
+        if(isVogal(nome.charAt(i))){
+            console.log(nome.charAt(i));
+            contVogal++;
+        }
+    }
+    
+    switch(contVogal){
+        case 0:
+        case 1:
+        case 2:
+            document.write("Criar uma página Web que leia um número inteiro N entre 50 e 100 (inclusive) e um número M entre 1 e 100. A página deve preencher um array com N valores gerados aleatoriamente entre 1 e 100 (inclusive). O número M deve ser procurado no array gerado e caso o número seja encontrado (exista) no array, a página deve mostrar o número M encontrado e a posição em que encontra no array. Caso contrário, mostrar número não encontrado.");
+            break;
+        case 3:
+            document.write("Criar uma página Web que leia um número inteiro N, entre 7 e 1000 (inclusive). A página deve preencher um array com N valores gerados aleatoriamente entre 1 e 1000 (inclusive). Apresentar na página a quantidade de elementos do array e o valor médio dos valores armazenados.");
+            break;
+        case 4:
+            document.write("Criar uma página Web que leia 15 números. Os números pares deverão ser armazenados em um array e os ímpares em outro. Ao final, mostrar na página o array de números ímpares e o array de números pares, bem como a média dos valores armazenados em cada array.");
+            break;
+        case 5:
+        case 6:
+            document.write("Criar uma página Web que leia 15 números entre -50 e 50 (inclusive). Os números positivos devem ser armazenados em um array e os negativos em outro. A página deve apresentar o array de números positivos e o array de números negativos, bem como a média dos valores armazenados em cada array.");
+            break;
+        case 7:
+        case 8:
+        case 9:
+            document.write("Criar uma página Web que gere um array de 10 posições com números aleatórios entre 1 e 6. A página deve ler um número X (entre 1 e 6). Mostrar na página quantas vezes o número X aparece dentro do array e, caso não apareça nenhuma vez, informar que o número buscado não existe no array.");
+            break;
+        
+        default:
+            document.write("Digitou seu sobrenome corretamente?");
+            break;
+    }
+}
+
+function isVogal(c){
+    let pattern = /[aeiouAEIOU]/g;
+    return pattern.test(c);
+}
