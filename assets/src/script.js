@@ -70,3 +70,47 @@ function isVogal(c){
     let pattern = /[aeiouAEIOU]/g;
     return pattern.test(c);
 }
+
+
+function suaSina3(){
+    var nome = document.getElementById("nome").value;
+    var acc = 0;
+    let i; 
+
+    for(i=0;i<nome.length;i++){
+        acc += nome.charCodeAt(i);               
+    }
+    let choice = parseInt(parseInt(acc/100)*4/9);
+    
+    switch(choice){
+        case 1:
+            document.write("<p>");
+            document.write("Problema 1 (7.0) Usando HTML e Javascript, construa uma página que leia um número N. A seguir crie um array A contendo 15 valores maiores que o número digitado e um array B contendo 15 valores menores que o número digitado. O array A e B devem ser mostrados na página HTML. O número digitado não deve aparecer em nenhum dos arrays.");
+            document.write("<p>");
+            document.write("Problema 2 (6.0) Construa uma página Web que leia 2 números inteiros, M e N. Apresentar os números inteiros entre o primeiro e o segundo. Caso M seja maior que N, os números mostrados devem estar em ordem decrescente, caso contrário, devem estar em ordem crescente. Os números gerados devem ser apresentados no console.");
+            break;
+        case 2:
+            document.write("<p>");
+            document.write("Problema 1 (7.0) Usando HTML e Javascript, construa uma página que leia um número N. A seguir crie um array A contendo 15 valores maiores que o número digitado e um array B contendo 15 valores menores que o número digitado. O array A e B devem ser mostrados na página HTML. O número digitado não deve aparecer em nenhum dos arrays.");
+            document.write("<p>");
+            document.write("Problema 2 (6.0) Escreva uma página Web que leia um número inteiro N e ofereça 2 botões de ação. Um botão deve mostrar os 10 primeiros números pares a partir de N. O segundo botão deve mostrar os 10 primeiros números ímpares a partir de N. Apresentar os resultados no console.");
+            break;
+        case 3:
+            document.write("<p>");
+            document.write("Problema 1 (7.0) Usando HTML e Javascript, construa uma página que leia 20 números inteiros positivos e armazene um array A. A partir do array A, construir um array B substituíndo os valores impares por -1 e pares por 1. ");
+            document.write("<p>");
+            document.write("Problema 2 (6.0) Construa uma página Web que leia 2 números inteiros, M e N. Apresentar os números inteiros entre o primeiro e o segundo. Caso M seja maior que N, os números mostrados devem estar em ordem decrescente, caso contrário, devem estar em ordem crescente. Os números gerados devem ser apresentados no console.");
+            break;
+        case 4:
+        case 5:
+        case 6:
+            document.write("<p>");
+            document.write("Problema 1 (7.0) Usando HTML e Javascript, construa uma página que leia 20 números inteiros positivos e armazene um array A. A partir do array A, construir um array B substituíndo os valores impares por -1 e pares por 1. ");
+            document.write("<p>");
+            document.write("Problema 2 (6.0) Escreva uma página Web que leia um número inteiro N e ofereça 2 botões de ação. Um botão deve mostrar os 10 primeiros números pares a partir de N. O segundo botão deve mostrar os 10 primeiros números ímpares a partir de N. Apresentar os resultados no console.");
+            break;
+        default:
+            document.write("Digitou seu sobrenome corretamente?");
+            break;
+    }
+}
