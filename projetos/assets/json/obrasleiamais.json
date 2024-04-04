@@ -1,0 +1,126 @@
+{
+  "livros": {
+    "Fortaleza Digital": {
+      "autor": "Dan Brown",
+      "tipo": "Ficção",
+      "descr": "Segurança da informação, NSA;"
+    },
+    "Neuromancer": {
+      "autor": "William Gibson",
+      "tipo": "Distopia",
+      "descr": "Este  livro cunhou o termo ciberespaço. Apresenta um cenário alusivo a Internet e Hacking, sendo considderado uma das obras que 'inspiraram' o filme Matrix."
+    },
+    "1984": {
+      "autor": "George Orwel",
+      "tipo": "Distopia",
+      "descr": "Este livro cunhou o termo Big Brother (Grande irmão). A obra apresenta um cenário onde as pessoas são monitoradas e a verdade é constantemente manipulada"
+    },
+    "O homem bi-centenário": {
+      "autor": "Isac Azimov",
+      "tipo": "Ficção científica",
+      "descr": "Romance que discute a humanização de robôs com Inteligência Artificial"
+    },
+    "O fim da eternidade": {
+      "autor": "Isaac Azimov",
+      "tipo": "Ficção científica",
+      "descr": "Tecnologia para viagem no tempo"
+    },
+    "Eu Robô": {
+      "autor": "Isaac Azimov",
+      "tipo": "Ficção científica",
+      "descr": "O livro é uma coletânea de contos de Azimov, sobre 'a humanização' dos robôs com Inteligência Artificial"
+    },
+    "Fahrenheit 451": {
+      "autor": "Ray Bradbury",
+      "tipo": "Distopia",
+      "descr": "A obra apresenta um mundo onde é proibido ler ou possuir livros e todas as relações acontecem de forma superficial e acelerada. Além disso, diversos dispositios de comunicação instantânea são usados como instrumentos de maniuplação coletiva de manipulação da mente"
+    }
+  },
+  "filmes": {
+    "Snowden – Herói ou Traidor": {
+      "ano": "-",
+      "tipo": "Filme baseado em fatos reais",
+      "descr": "Apresenta uma versão da história de Edward Snowden, que tornou público diversas práticas ilegais de espionagem praticadas pelo FBI e NSA."
+    },
+    "Matrix - Trilogia": {
+      "ano": "-",
+      "tipo": "Ficção/Distopia",
+      "descr": "Realidade Virtual/Inteligência Artificial."
+    },
+    "A senha - Swordfish": {
+      "ano": "-",
+      "tipo": "Ficção",
+      "descr": "Segurança/Hacking."
+    },
+    "Piratas do vale do silício": {
+      "ano": "-",
+      "tipo": "Filme baseado em fatos reais",
+      "descr": "'Biografia' sobre criação empresas Microsoft e Apple."
+    },
+    "A.I. Inteligência Artificial": {
+      "ano": "-",
+      "tipo": "Ficção/Drama",
+      "descr": "Apresenta um drama ficcional sobre 'humanização' da Inteligência Artificial"
+    },
+    "Tron": {
+      "ano": "-",
+      "tipo": "Ficção",
+      "descr": "Realidade Virtual"
+    },
+    "Tron 2": {
+      "ano": "-",
+      "tipo": "Ficção",
+      "descr": "Realidade Virtual"
+    },
+    "O jogo da Imitação": {
+      "ano": "-",
+      "tipo": "Drama baseado em fatos reais",
+      "descr": "Apresenta uma visão sobre Alan Turing, um dos cientsitas considerados 'pai da computação'."
+    },
+    "Hakcers": {
+      "ano": "-",
+      "tipo": "Ficção",
+      "descr": "Apresenta uma história ficcional sobre hackers."
+    },
+    "Jogos de Guerra": {
+      "ano": "-",
+      "tipo": "Ficção",
+      "descr": "Apresenta uma história ficcional sobre hackers."
+    },
+    "Transcendence": {
+      "ano": "-",
+      "tipo": "Ficção",
+      "descr": "Ficção sobre computação, Internet e consciência. A obra faz referência a elementos do livro Neuromancer."
+    },
+    "A conversação": {
+      "ano": "-",
+      "tipo": "Ficção/Drama",
+      "descr": "Filme sobre espionagem e 'hacking' antes das redes e Internet."
+    },
+    "Inimigo do Estado": {
+      "ano": "-",
+      "tipo": "Ficção",
+      "descr": "Filme sobre espionagem e 'hacking' na era da Internet. O filme tem referências e intertextualidade com o filme 'A Conversação'"
+    },
+    "O 13º Andar": {
+      "ano": "-",
+      "tipo": "Ficção",
+      "descr": "Ficção sobre realidade virtual."
+    },
+    "Star Trek": {
+      "ano": "-",
+      "tipo": "Filmes e Série de Ficção",
+      "descr": "A franquia possui diversos filmes e séries sobre exploração espacial."
+    },
+    "Oblivion": {
+      "ano": "-",
+      "tipo": "Ficção/Distopia",
+      "descr": "Clonagem."
+    },
+    "Elisium": {
+      "ano": "2013",
+      "tipo": "Ficção/Distopia",
+      "descr": "Tecnologias como insturmento de segregação social."
+    }
+  }
+}

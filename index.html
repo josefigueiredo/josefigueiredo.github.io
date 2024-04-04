@@ -1,192 +1,165 @@
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Página pessoal" />
-    <meta name="author" content="José de Figueiredo" />
-    <title> Scio Me Nihil Scire </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/0f5c63e59f.js" crossorigin="anonymous"></script>
-
-    <meta name="description" content="Computação, Informática, Cultura e Dungeon & Dragons">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Scio Me Nihil Scire</title>
 </head>
 
-<body class="bg-dark text-white">
+<body>
+  <header class="container" style="border-style: dotted;">
+    <section class="row justify-content-center text-black">
+      <section class="p-2 col-sm-2" style="border-style: dotted;">
+        <figure class="figure">
+          <img class="figure-img img-fluid rounded" src="assets/img/meuLogo.png" alt="Logo" style="max-height: 100px">
+        </figure>
+      </section>
+      <section class="p-2 col-sm-8" style="border-style: dotted;">
+        <h1>Scio me nihil scire</h1>
+        <h6>José Antônio de Figueiredo</h6>
+      </section>
+    </section>
+  </header>
+  <main class="container">
     <!-- Nav tabs -->
-    <nav class="container-fluid p-5 m-7.5">
-        <ul class="nav nav-pills nav-justified">
-            <li class="nav-item">
-                <a class="nav-link active fas fa-home" data-toggle="pill" href="#home"><span style="padding-top: 0.5em;" class="d-none d-lg-block">Home</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link fas fa-project-diagram" data-toggle="pill" href="#projetos"><span style="padding-top: 0.5em;" class="d-none d-lg-block">Projetos</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link fas fa-gamepad" aria-hidden="true" data-toggle="pill" href="#dnd"><span style="padding-top: 0.5em;" class="d-none d-lg-block">D&D</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link fas fa-user" data-toggle="pill" href="#sobre"><span style="padding-top: 0.5em;" class="d-none d-lg-block">Sobre</span></a>
-            </li>
-        </ul>
-    </nav>
+    <ul class="nav nav-tabs nav-justified">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#home">Principal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#projetos">Projetos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#notasaula">Notas de Aula</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#sobre">Sobre</a>
+      </li>
+    </ul>
 
     <!-- Tab panes -->
-    <main class="tab-content">
-        <section class="tab-pane container active" id="home">
-            <article>
-                <section class="card bg-secondary ">
-                    <h5 class="card-header ">Sobre este site</h5>
-                    <article class="card-body ">
-                        <p class="card-text "> Mantenho esse site com o propósito de armazenar, divulgar, e também registrar, alguns assuntos que tenho interesse ou algum envolvimento. O site foi colocado no ar em 2021.</p>
-                        <p class="card-text "> Sinta-se a vontade para entrar em contato.</p>
-                    </article>
-                </section>
-                <br>
-                
-            
-            
+    <section class="tab-content">
+      <section class="tab-pane container active" id="home">
+        <article class="card">
+          <h4 class="card-title">Página Eletrônica</h4>
+          <div class="card-text">
+            Página Eletrônica para registro de projetos e materiais de apoio.
+          </div>
+        </article>
+      </section>
+      <section class="tab-pane container fade" id="projetos">
+
+        <!-- Projetos content -->
+        <section class="row">
+          <section class="col-sm-6">
+            <!-- Cartoes de projeto lado esquerdo -->
+            <article class="card">
+              <h4 class="card-title">RPG</h4>
+              <div class="card-text">
+                Sobre RPG
+              </div>
+              <a target="_blank" href="projetos/rpg.html" class="card-link">Saiba mais</a>
             </article>
-        </section>
-
-        <section class="tab-pane container fade " id="projetos">
-            <article>
-                <section class="card bg-secondary ">
-                    <h5 class="card-header ">Altas Habilidades/Superdotação</h5>
-                    <article class="card-body ">
-                        <h6 class="card-title ">Site da AGAAHSD</h6>
-                        <p class="card-text "> Faço parte da equipe diretiva da Associação Gaúcha de Apoio às Altas Habilidades/Superdotação. Este site é uma contribuição para a comunidade AH/SD.</p>
-                        <a href="http://www.agaahsd.com.br/" target="_blank " class="btn btn-primary ">Download</a>
-                    </article>
-                </section>
-                <br>
-                <section class="card bg-secondary ">
-                    <h5 class="card-header ">Micro Apostilas</h5>
-                    <article class="card-body ">
-                        <h6 class="card-title ">Programação com JavaScript</h6>
-                        <p class="card-text "> Este material se propõe apresentar o básico da programação, usando JavaScript. Os problemas apresentados, são resolvidos também por fluxograma e pseudo-código.</p>
-                        <a href="https://github.com/josefigueiredo/microapostilaprogjavascriptoctave/raw/master/Micro%20Apostila%20de%20Programa%C3%A7%C3%A3o.pdf " target="_blank " class="btn btn-primary ">Download</a>
-                    </article>
-                    <article class="card-body ">
-                        <h6 class="card-title ">Circuitos Digitais </h6>
-                        <p class="card-text "> Este material se propõe apresentar o básico relacionado com Circuitos Digitais.</p>
-                        <a href="https://github.com/josefigueiredo/microapostilaCD/blob/master/Micro%20Apostila%20de%20Circuitos%20Digitais.pdf" target="_blank " class="btn btn-primary ">Download</a>
-                    </article>
-                </section>
-                <br>
-                <section class="card bg-secondary ">
-                    <h5 class="card-header ">Recomendação de Livros e Filmes</h5>
-                    
-                    <article class="card-body ">
-                        <h6 class="card-title ">Um pouco de cultura... </h6>
-                        <h6 class="card-title ">E que fique registrado... nem todos os livros/filmes listados aqui são bons (ou "do bem")... apenas são relacionadoas (de alguma forma) à Tecnologia da Informação. </h6>
-                    </article>
-                    
-                    <article class="card-body ">
-                        <h6 class="card-title ">Listagem de títulos de livros que tem alguma relação com a tecnologia - é claro dentro do universo ficcional.</h6>
-                        <a href="livros.html" target="_self" class="btn btn-primary ">Ver lista de livros</a> &nbsp; 
-                    </article>
-                    <article class="card-body ">
-                        <h6 class="card-title ">Não sou devorador de filmes, mas a lista a seguir traz alguns títulos interessantes relacionados com a área. </h6>
-                        <a href="filmes.html" target="_self" class="btn btn-primary ">Ver lista de filmes</a>
-                    </article>
-                </section>
+            <article class="card">
+              <h4 class="card-title">Dicas de Livros e Filmes</h4>
+              <div class="card-text">
+                Sobre RPG
+              </div>
+              <a target="_blank" href="projetos/dicaslivrosfilmes.html" class="card-link">Saiba mais</a>
             </article>
-        </section>
-        <section class="tab-pane container fade " id="dnd">
-            <article>
-                <h2>Um pouco sobre Dungeons & Dragons...</h2>
-                <section class="card bg-secondary ">
-                    <h5 class="card-header ">Coisas para download</h5>
-                    <article class="card-body ">
-                        <p class="card-text ">Estes materiais foram criados por mim. Seu uso é permitido sob <a href="https://creativecommons.org/licenses/by/4.0/">Licença CC-BY</a> </p>
-                        <h6 class="card-title ">Resumo para Escudo do Mestre - imprimível</h6>
-                        <a href="assets/downloads/ResumoEscudo.pdf" target="_blank " class="btn btn-primary ">Download</a>
-                        <p></p>
-                        <!--
-                        <h6 class="card-title ">Tumbas do Clã Kherrylon (em breve)</h6>
-                        <a href="" target="_blank " class="btn btn-primary ">Download</a>
-                        <p></p>
-                        <h6 class="card-title ">Dungeon 2</h6>
-                        <p class="card-text "> em breve</p>
-                        <a href="" target="_blank " class="btn btn-primary ">Download</a>-->
-                    </article>
-                </section>
-                <p></p>
-                <section class="card bg-secondary ">
-                    <h5 class="card-header ">Algumas ferramentas externas...</h5>
-                    <article class="card-body ">
-                        <h6 class="card-title">Ficha de personagem (Editável/pt_BR) - disponibilizada pela <a href="https://asmodee.galapagosjogos.com.br/dnd-consulte-o-grimorio" target="_blank">Galápagos Jogos</a> </h6>
-                        <a href="https://drive.google.com/file/d/1uXzHR0uOPnqM4Kb2hnyEbCxiaFZD-_tJ/view" target="_blank" class="btn btn-primary">Acessar</a>
+          </section>
 
-                        <p></p>
-                        <h6 class="card-title ">Calculando Encontros de combate</h6>
-                        <a href="https://jogaod20.blogspot.com/2019/10/dnd5e-criando-encontros.html?m=1" target="_blank" class="btn btn-primary">Blog fácil de ler (jogaod20)</a>
-
-                        <a href="http://kobold.club/fight/#/encounter-builder" target="_blank" class="btn btn-primary">Calculadora de encontros</a>
-
-                        <p></p>
-                        <h6 class="card-title">Lista de Magias</h6>
-                        <a href="https://avribacki.gitlab.io/magias5e/" target="_blank " class="btn btn-primary ">Magias por classe/nível</a>
-                    </article>
-                </section>
-                <p></p>
+          <section class="col-sm-6">
+            <!-- Cartoes de projeto lado direito -->
+            <article class="card">
+              <h4 class="card-title">Superdotação</h4>
+              <div class="card-text">
+                Sobre Altas Habilidades ou
+              </div>
+              <a target="_blank" href="projetos/ahsd.html" class="card-link">Saiba mais</a>
             </article>
-        </section>
-
-
-        <section class="tab-pane container fade " id="sobre">
-            <article>
-                <h2>Sobre mim.</h2>
-                <p>Meu nome é José de Figueiredo, sou professor e pesquisador na área de Ciência da Computação. </p>
-                Você me acha no:<p></p>
-                <ul>
-                    <li><a href="https://twitter.com/josefig1976" class="twitter-follow-button" data-show-count="false">@josefig1976</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
-                    <li>... e é claro por e-mail <a href="mailto:deb.gnulinux@gmail.com">deb.gnulinux@gmail.com</a> </li>                                      
-                </ul>
-                
-          
-            
-                <h4>Como começou:</h4>
-                <p>
-                    Minha formação técnica inicia em 1992, com o curso <a href="https://ctececy.wixsite.com/ensino ">Técnico em Eletrônica</a>, na escola Cecy Leyte Costa de Passo Fundo. Cada vez mais eu reconheço a importância que o Cecy teve na minha formação, tanto técnica quanto humana. 
-                </p>
-                <p>
-                    Bacharel em <a href="https://www.upf.br/Iceg/curso/ciencia-da-computacao ">Ciência da Computação</a> pela Universidade de Passo Fundo (2004), Especialista em Educação a Distância (2010) e Mestre em Computação Aplicada (2016) pelo Programa
-                    de <a href="https://www.upf.br/ppgca ">Pós-Graduação em Computação Aplicada</a> na Universidade de Passo Fundo. </p>
-
-                <p>
-                    Atualmente sou professor no <a href="http://www.ifsul.edu.br ">Instituto Federal de Educação, Ciência e Tecnologia Sul-rio-grandense</a>. </p>
-                <p>
-                    Tenho larga experiência profissional na área de TI, com ênfase em infraestrutura, tendo atuado principalmente nos seguintes temas: softwares para engenharia clínica e médicos, imagens médicas, infraestrutura de TI e redes de computadores. </p>
-
-                <h4>Atualmente na área técnica:</h4>
-                <p>
-                    Atualmente trabalho com ensino e pesquisa nas áreas da Computação Aplicada. Tenho preferência pelas sub-areas de Computação Móvel e Sistemas Embarcados.</p>
-                <p>
-                    Também sou forte entusiasta, e conforme consigo, procuro colaborar em projetos de Softwares e Hardwares Livre.
-                </p>
-
-                <h4>Atualmente na área humana:</h4>
-                <p>
-                    Tenho trabalhado bastante nas áreas de inclusão escolar e inclusão como um todo. Desde 2010 faço parte do NAPNE do campus Passo Fundo, buscando implantar, executar e divulgar ações na área de inclusão de pessoas com deficiência, transtornos globais do desenvolvimento e altas Habilidades/Superdotação. 
-                <p>
-                    Minha área de foco é Altas Habilidades/Superdotação.
-                </p>
             </article>
+          </section>
         </section>
-    </main>
+        <!-- Fim Projetos content -->
+
+
+        <section class="tab-pane container fade" id="notasaula">
+          <article class="card">
+            <h4 class="card-title">Circuitos Digitais (Bel. Computação)</h4>
+            <section class="card-body">
+              <button type="button" class="btn btn-primary" onclick="abreNotasCD()">Acessar</button>
+              <!-- 
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#notasCD">
+              Acessar
+            </button> -->
+
+            </section>
+          </article>
+          <article class="card">
+            <h4 class="card-title">Análise e Complexidade de Algoritmos (Bel. Computação)</h4>
+            <section class="card-body">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#notasACA">
+                Acessar
+              </button>
+            </section>
+          </article>
+          <article class="card">
+            <h4 class="card-title">Redes de Computadores (Técnico em Informática)</h4>
+            <section class="card-body">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#notasRC">
+                Acessar
+              </button>
+            </section>
+          </article>
+        </section>
+        <section class="tab-pane container fade" id="sobre">
+          <article class="card">
+            <h4 class="card-title">José de Figueiredo</h4>
+            <h6 class="card-subtitle">Professor EBTT</h6>
+            <div class="card-body">
+              <p class="card-text">Trabalho com disicplinas da Computação e Técnico em Informática - Modalide Ensino
+                Médio Integrado.</p>
+            </div>
+            <h6 class="card-subtitle">Educação Inclusiva</h6>
+            <div class="card-body">
+              <p class="card-text">Atuo no Núcleo de Apoio às Pessoas com Necessidades Específicas (<a
+                  href="http://napne.passofundo.ifsul.edu.br">NAPNE</a>) do campus Passo Fundo, que faz o acompanhamento
+                de estudantes com
+                Necessidades Específicas.</p>
+            </div>
+            <h6 class="card-subtitle">Altas Habilidades ou Superdotação</h6>
+            <div class="card-body">
+              <p class="card-text">Sou voluntário na Associação Gaúcha de Apoio às Altas Habilidades/Superdotação (<a
+                  href="http://www.agaahsd.com.br">AGAAHSD</a>).</p>
+            </div>
+            <h6 class="card-subtitle">Software Livre</h6>
+            <div class="card-body">
+              <p class="card-text">Sou ativista do Software Livre, utilizando Linux desde 1999. Minha distribuição do
+                coração <a target="_blank" href="http://www.debian.org">Debian</a></p>
+            </div>
+          </article>
+
+        </section>
+      </section>
+  </main>
+
+
+
 
 
 </body>
 
-
+<script>
+  function abreNotasCD() {
+    window.open("notasAula/CD/notasCD.html", "_blank",
+      "toolbar=no,scrollbars=yes,resizable=no,top=500,left=500,width=400,height=400");
+  }
+</script>
 
 </html>

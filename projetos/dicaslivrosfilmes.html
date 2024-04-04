@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
+    <title>Livros & Filmes</title>
+</head>
+
+<body>
+    <header class="mb-2 p-3 bg-info text-white rounded">
+        <h1>Projeto Leia+</h1>
+        <h5>Sugestões de livros e filmes que possuem alguma relação com a Computação ou Tecnologias.</h5>
+        <section class="d-flex justify-content-center">
+            <p>Assim que possível a página será atualizada com novos títulos.</p>
+        </section>
+        <section class="d-flex justify-content-end">
+            <p> <a href="../index.html">Voltar à página principal</a></p>
+        </section>
+    </header>
+    <main class="mb-2 p-3 container">
+        <article class="d-flex justify-content-center">
+            <p><button id="btnLivros" onclick="listaLivros()">Lista de Livros</button> | <button id="btnFilmes"
+                    onclick="listaFilmes()">Lista de
+                    Filmes</button></p>
+        </article>
+        <article class="d-flex justify-content-center">
+            <div id="lugardatabela">
+                <table id="listagem" class="display" width="100%"></table>
+            </div>
+        </article>
+        <article class="d-flex justify-content-end">
+            <p><button onclick="window.location.reload()">Fechar tabela</button></p>
+        </article>
+    </main>
+</body>
+
+<script>
+    var tbl;
+
+    async function fetchJSONData() {
+        let data
+        try {
+            const res = await fetch("./assets/json/obrasleiamais.json");
+            if (!res.ok) {
+                throw new Error("Falha ao abrir arquivo com lista de livros");
+            } else {
+                data = await res.json();
+            }
+        } catch (error) {
+            console.log("Erro:", error);
+        }
+        return data;
+
+    }
+
+    async function listaLivros() {
+        document.getElementById("btnFilmes").hidden = true;
+        let dataSet = await fetchJSONData();
+        let dataSetLivros = dataSet.livros;
+        let dataSetLivrosArray = [];
+
+        for (const obra in dataSetLivros) {
+            let dadosObra = dataSetLivros[obra];
+            let dadosObraArray = []
+            dadosObraArray.push(obra);
+            //console.log(`Log 1: dados de ${obra}: ${JSON.stringify(dadosObra)}`);
+
+            for (const atributo in dadosObra) {
+                //console.log(`log 2: Atributo: ${atributo} Obra.atributo: ${dadosObra[atributo]} `);
+                dadosObraArray.push(dadosObra[atributo])
+            }
+
+            dataSetLivrosArray.push(dadosObraArray)
+            //console.log(`log 3: ${JSON.stringify(dataSetLivrosArray) }`);
+        }
+
+
+        // técnica obtida em https://datatables.net/examples/data_sources/
+        if (tbl != null) {
+            tbl.clear();
+            tbl.destroy();
+        }
+        tlb = new DataTable('#listagem', {
+            columns: [{
+                    title: "Titulo"
+                },
+                {
+                    title: "Ano"
+                },
+                {
+                    title: "Tipo"
+                },
+                {
+                    title: "Descrição"
+                }
+
+            ],
+            data: dataSetLivrosArray
+        })
+    }
+
+    async function listaFilmes() {
+        document.getElementById("btnLivros").hidden = true;
+
+        let dataSet = await fetchJSONData();
+        let dataSetFilmes = dataSet.filmes;
+        let dataSetFilmesArray = [];
+
+        for (const obra in dataSetFilmes) {
+            let dadosObra = dataSetFilmes[obra];
+            let dadosObraArray = []
+            dadosObraArray.push(obra);
+            //console.log(`Log 1: dados de ${obra}: ${JSON.stringify(dadosObra)}`);
+
+            for (const atributo in dadosObra) {
+                //console.log(`log 2: Atributo: ${atributo} Obra.atributo: ${dadosObra[atributo]} `);
+                dadosObraArray.push(dadosObra[atributo])
+            }
+
+            dataSetFilmesArray.push(dadosObraArray)
+            //console.log(`log 3: ${JSON.stringify(dataSetFilmesArray) }`);
+        }
+
+        // técnica obtida em https://datatables.net/examples/data_sources/
+        if (tbl != null) {
+            tbl.clear();
+            tbl.destroy();
+        }
+        tbl = new DataTable('#listagem', {
+            columns: [{
+                    title: "Titulo"
+                },
+                {
+                    title: "Autor"
+                },
+                {
+                    title: "Tipo"
+                },
+                {
+                    title: "Descrição"
+                }
+
+            ],
+            data: dataSetFilmesArray
+        })
+    }
+</script>
+
+</html>
