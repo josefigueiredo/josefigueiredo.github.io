@@ -11,21 +11,17 @@
   <title>Scio Me Nihil Scire</title>
 </head>
 
-<body>
-  <header class="container" style="border-style: dotted;">
-    <section class="row justify-content-center text-black">
-      <section class="p-2 col-sm-2" style="border-style: dotted;">
-        <figure class="figure">
-          <img class="figure-img img-fluid rounded" src="assets/img/meuLogo.png" alt="Logo" style="max-height: 100px">
-        </figure>
-      </section>
-      <section class="p-2 col-sm-8" style="border-style: dotted;">
-        <h1>Scio me nihil scire</h1>
-        <h6>José Antônio de Figueiredo</h6>
-      </section>
+<body class="container p-2 m-1">
+  <header class="d-flex p-2 justify-content-center text-primary-emphasis bg-primary-subtle border border-primary-subtle"
+    style="border-style:dashed">
+    <img class="image rounded-pill me-2" src="assets/img/meuLogoV2.png" alt="Logo" style="max-width:10em">
+    <section class="ms-2 align-self-center">
+      <h1>Scio me nihil scire</h1>
+      <h6>José Antônio de Figueiredo</h6>
     </section>
+
   </header>
-  <main class="container">
+  <main class="container text-primary-emphasis bg-primary-subtle border border-primary-subtle">
     <!-- Nav tabs -->
     <ul class="nav nav-tabs nav-justified">
       <li class="nav-item">
@@ -55,36 +51,63 @@
       <section class="tab-pane container fade" id="projetos">
 
         <!-- Projetos content -->
-        <section class="row">
-          <section class="col-sm-6">
-            <!-- Cartoes de projeto lado esquerdo -->
-            <article class="card">
-              <h4 class="card-title">RPG</h4>
-              <div class="card-text">
-                Sobre RPG
-              </div>
-              <a target="_blank" href="projetos/rpg.html" class="card-link">Saiba mais</a>
-            </article>
-            <article class="card">
-              <h4 class="card-title">Dicas de Livros e Filmes</h4>
-              <div class="card-text">
-                Sobre RPG
-              </div>
-              <a target="_blank" href="projetos/dicaslivrosfilmes.html" class="card-link">Saiba mais</a>
-            </article>
-          </section>
+        <section class="d-flex flex-wrap m-3 p-3">
+          <article class="card m-2 p-2" style="max-width: 20em;">
+            <img src="./assets/img/rpgDice.jpg" class="card-img-top"
+              alt="Dado de 20 lados, para jogos de RPG, na cor preta, mostrando o número 1.">
+            <p class=".fs-6 text">Foto de <a
+                href="https://unsplash.com/pt-br/@darkelfdice?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Shane
+                Scarbrough</a> na <a
+                href="https://unsplash.com/pt-br/fotografias/texto-vQVv4UIrYR4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+            <h4 class="card-title">RPG</h4>
+            <div class="card-text">
+              Uma seção com alguns conteúdos sobre o RPG - (em breve).
+            </div>
+            <a target="_blank" href="projetos/rpg.html" class="card-link">Saiba mais</a>
+          </article>
+          <article class="card m-2 p-2" style="max-width: 20em;">
+            <img src="./assets/img/pilhaLivros.jpg" class="card-img-top"
+              alt="Dado de 20 lados, para jogos de RPG, na cor preta, mostrando o número 1.">
+            <p class=".fs-6 text">Foto de <a
+                href="https://unsplash.com/pt-br/@chrislawton?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Chris
+                Lawton</a> na <a
+                href="https://unsplash.com/pt-br/fotografias/fotografia-de-foco-raso-de-pilha-de-livros-zvKx6ixUhWQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash
+              </a> </p>
+            <h4 class="card-title">Dicas de Livros e Filmes</h4>
+            <div class="card-text">
+              <p>Neste projeto apresento uma lista de obras que tenham alguam relação com a Computação ou a
+                Tecnologia.</p>
+            </div>
+            <a target="_blank" href="projetos/dicaslivrosfilmes.html" class="card-link">Saiba mais</a>
+          </article>
+          <article class="card m-2 p-2" style="max-width: 20em;">
+            <img src="./assets/img/pessoaPensando.jpg" class="card-img-top" alt="Um homem pensando.">
+            <p class=".fs-6 text">Foto de <a
+                href="https://unsplash.com/pt-br/@kaziminmizan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kazi
+                Mizan</a> na <a
+                href="https://unsplash.com/pt-br/fotografias/homem-na-camisa-social-xadrez-cinza-e-branca-0G2ZxV31kk4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+            <h4 class="card-title">Superdotação</h4>
+            <div class="card-text">
+              Uma seção com alguns conteúdos sobre o Sobre Altas Habilidades - (em breve).
+            </div>
+            <a target="_blank" href="projetos/ahsd.html" class="card-link">Saiba mais</a>
+          </article>
 
-          <section class="col-sm-6">
-            <!-- Cartoes de projeto lado direito -->
-            <article class="card">
-              <h4 class="card-title">Superdotação</h4>
-              <div class="card-text">
-                Sobre Altas Habilidades ou
-              </div>
-              <a target="_blank" href="projetos/ahsd.html" class="card-link">Saiba mais</a>
-            </article>
-            </article>
-          </section>
+          <article class="card m-2 p-2" style="max-width: 20em;">
+            <img src="./assets/img/arduino.jpg" class="card-img-top" alt="Um circuito com Arduino">
+            <p class=".fs-6 text">Foto de <a
+                href="https://unsplash.com/pt-br/@vishnumaiea?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Vishnu
+                Mohanan</a> na <a
+                href="https://unsplash.com/pt-br/fotografias/um-close-up-de-uma-placa-com-fios-presos-a-ela-vtg8tAdoWVQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+            <h4 class="card-title">Arduinizando</h4>
+            <div class="card-text">
+              Meu blog com alguns conteúdos sobre o Arduino (em breve será trazido para este ambiente).
+            </div>
+            <a target="_blank" href="https://arduinizando.blogspot.com/" class="card-link">Saiba mais</a>
+          </article>
         </section>
         <!-- Fim Projetos content -->
 
